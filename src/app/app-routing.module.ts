@@ -5,7 +5,7 @@ import { AngularComponent } from './pages/angular/angular.component';
 
 
 const routes: Routes = [
-{path:'/', component: PortafolioComponent},
+{path:'', component: PortafolioComponent},
 {path:'angular', component: AngularComponent},
 {path:'**', pathMatch:'full',redirectTo:'/'},
 
