@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { WpserviceService } from 'src/app/services/wpservice.service';
+import {Observable} from 'rxjs'
+import {postInter} from '../../interfaces/post.interface'
 
 @Component({
   selector: 'app-angular',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataWp : WpserviceService) { }
+
+  posts: Observable<any[]>
 
   ngOnInit() {
+    this.posts = this.dataWp.getPost()
   }
 
 }
