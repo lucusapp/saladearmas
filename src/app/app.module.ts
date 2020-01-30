@@ -10,6 +10,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AngularComponent } from './pages/angular/angular.component';
+import { PostComponent } from './pages/wordpress/post.component';
+import { PostListComponent } from './pages/wordpress/post-list.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,12 @@ import { AngularComponent } from './pages/angular/angular.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    AngularComponent
+    AngularComponent,
+    PostComponent,
+    PostListComponent,
+
+
+    
   ],
   imports: [
     BrowserModule,
